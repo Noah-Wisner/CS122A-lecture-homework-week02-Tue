@@ -4,6 +4,10 @@ module d_flip_flop(
     output reg Q
 );
 
-// Put your implementation of a halfadder goes here
+// Put your implementation of a flip-flop goes here
+always_ff @ (posedge Clk)   //_ff in SV specifies sequential
+begin
+    Q <= D;
+end
 
 endmodule
